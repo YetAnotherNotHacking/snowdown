@@ -76,7 +76,7 @@ def run_checks():
 
 # argpase caused case to add an item to the csv for tracking
 def add_service():
-    print("1. HTTP\n2. Minecraft\n3. SSH\n4. Ping")
+    log.info("1. HTTP\n2. Minecraft\n3. SSH\n4. Ping")
     tsel = input("Type? - ").strip()
     match int(tsel):
         case 1:
@@ -88,7 +88,7 @@ def add_service():
         case 4:
             t = "Ping"
         case _:
-            print("Option is not valid")
+            log.info("Option is not valid")
             return
     
     h = input("Host: ").strip()

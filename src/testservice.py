@@ -9,7 +9,7 @@ log = Logger(debug=True)
 
 class check_service_up:
     def check_http(url, timeout=10):
-        print(f"Checking http url {url}")
+        log.debug(f"Checking http url {url}")
         try:
             r = requests.get(url, allow_redirects=True, timeout=timeout)
             return r.status_code == 200
@@ -17,7 +17,7 @@ class check_service_up:
             return False
 
     def check_minecraft(host, port=25565, timeout=5):
-        print(f"Checking MineCraft server {host} on port {port}")
+        log.debug(f"Checking MineCraft server {host} on port {port}")
         try:
             import mcstatus
             server = mcstatus.MinecraftServer(host, port)
@@ -27,7 +27,7 @@ class check_service_up:
             return False
 
     def check_ssh(host, port=22, timeout=5):
-        print(f"Checking ssh connectivity to {host} on port {port}")
+        log.debug(f"Checking ssh connectivity to {host} on port {port}")
         try:
             with socket.create_connection((host, port), timeout=timeout):
                 return True
