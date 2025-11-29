@@ -1,6 +1,6 @@
 from notifications import send_notification
 from testservice import check_service_up
-from settings import SDSettings
+from settings import SDSettings, run_setup_tui
 from datetime import datetime
 from customlog import Logger
 import argparse
@@ -117,6 +117,7 @@ def main():
     s.add_parser("run")
     s.add_parser("addservice")
     s.add_parser("removeservice")
+    s.add_parser("setup")
     args = p.parse_args()
     match args.cmd:
         case "run":
@@ -125,6 +126,8 @@ def main():
             add_service()
         case "removeservice":
             remove_service()
+        case "setup":
+            run_setup_tui()
 
 if __name__ == "__main__":
     main()
