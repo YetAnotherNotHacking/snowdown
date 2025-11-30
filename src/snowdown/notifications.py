@@ -1,7 +1,7 @@
 import requests
 import smtplib
 from email.message import EmailMessage
-from settings import SDSettings
+from snowdown.settings import SDSettings
 
 class send_notification:
     def send_email(servername, timestamp, failreason):
