@@ -6,7 +6,7 @@ readme = "snowdown.md"
 requires-python = ">=3.10"
 
 [project.scripts]
-snowdown = "snowdown.main:main"
+snowdown = "src.main:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
