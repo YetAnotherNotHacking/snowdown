@@ -54,7 +54,7 @@ def run_checks():
         up = False
         match t:
             case "HTTP":
-                up = check_service_up.check_http(h)
+                up = check_service_up.check_http(h, p=80)
             case "Minecraft":
                 up = check_service_up.check_minecraft(host=h, port=p)
             case "SSH":
