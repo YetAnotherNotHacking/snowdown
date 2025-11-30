@@ -1,6 +1,8 @@
 # SnowDown
 A feature-rich downtime notificatoin utility.
 
+Demo: [YouTube](https://youtu.be/-uyDo3qsN0s)
+
 ## Info
 Around winter time, with heavy snow power and internet outages become more common. It is important that we stay on top of our infrastructure, and part of that is knowing when it goes down. We can't constantly check ourselves, so why not have the computers do that?
 
