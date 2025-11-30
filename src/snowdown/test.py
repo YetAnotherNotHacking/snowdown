@@ -1,6 +1,6 @@
-from notifications import send_notification
+from snowdown.notifications import send_notification
 from datetime import datetime
-from customlog import Logger
+from snowdown.customlog import Logger
 
 log = Logger(debug=False)
 

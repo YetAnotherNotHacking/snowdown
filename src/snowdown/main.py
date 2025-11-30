@@ -1,8 +1,8 @@
-from notifications import send_notification
-from testservice import check_service_up
-from settings import SDSettings, run_setup_tui
+from snowdown.notifications import send_notification
+from snowdown.testservice import check_service_up
+from snowdown.settings import SDSettings, run_setup_tui
 from datetime import datetime
-from customlog import Logger
+from snowdown.customlog import Logger
 import argparse
 import os 
 import csv

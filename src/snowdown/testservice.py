@@ -1,5 +1,5 @@
 import requests
-from customlog import Logger
+from snowdown.customlog import Logger
 import socket
 import smtplib
 import imaplib
